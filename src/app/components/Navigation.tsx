@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/app/components/ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import logoImage from "figma:asset/b54f2ab8467a1d992ecda445955c425134b20d97.png";
+import logoImage from "../../assets/b54f2ab8467a1d992ecda445955c425134b20d97.png";
 
 export default function Navigation() {
   const location = useLocation();
