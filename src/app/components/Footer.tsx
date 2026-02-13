@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { Mail, MessageCircle, Twitter, Youtube } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import logoImage from "figma:asset/b54f2ab8467a1d992ecda445955c425134b20d97.png";
+import logoImage from "../../assets/b54f2ab8467a1d992ecda445955c425134b20d97.png";
 
 export default function Footer() {
   return (
