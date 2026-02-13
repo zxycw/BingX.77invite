@@ -6,7 +6,8 @@ import Analysis from "@/app/pages/Analysis";
 import Guide from "@/app/pages/Guide";
 import About from "@/app/pages/About";
 
-  export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
     {
       path: "/",
       Component: Root,
