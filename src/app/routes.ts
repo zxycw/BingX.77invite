@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router";
+import { createBrowserRouter } from "react-router";
 import Root from "@/app/Root";
 import Home from "@/app/pages/Home";
 import Education from "@/app/pages/Education";
@@ -6,7 +6,7 @@ import Analysis from "@/app/pages/Analysis";
 import Guide from "@/app/pages/Guide";
 import About from "@/app/pages/About";
 
-export const router = createHashRouter(
+export const router = createBrowserRouter(
   [
     {
       path: "/",
@@ -20,5 +20,7 @@ export const router = createHashRouter(
       ],
     },
   ],
-  { basename: import.meta.env.BASE_URL }
+  {
+    basename: import.meta.env.BASE_URL,
+  }
 );
