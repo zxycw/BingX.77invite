@@ -5,6 +5,24 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>推銷網站建設</title>
+      <script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var p = params.get("p");
+    var q = params.get("q");
+
+    if (p !== null) {
+      params.delete("p");
+      params.delete("q");
+
+      var base = window.location.pathname; // e.g. /BingX.77invite/
+      var newPath = base + (p ? p : "");
+      var newQuery = q ? "?" + q : "";
+
+      window.history.replaceState(null, "", newPath + newQuery);
+    }
+  })();
+</script>
     </head>
 
     <body>
