@@ -17,9 +17,14 @@ export const router = createBrowserRouter(
         { path: "analysis", Component: Analysis },
         { path: "guide", Component: Guide },
         { path: "about", Component: About },
-      ],
+  {
+    path: "*",
+    loader: () => {
+      window.location.replace(import.meta.env.BASE_URL);
+      return null;
     },
-  ],
+  },
+],
   {
     basename: import.meta.env.BASE_URL,
   }
